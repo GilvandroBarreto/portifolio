@@ -3,27 +3,6 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-/* 
-@media only screen and (max-width: 425px) {
-	body{
-		display: flex;
-		flex-direction: column;
-		column-gap: 30px;
-	}
-	.img-title{
-		font-size: 99%;
-	}
-	.form-title{
-		font-size: 99%;
-	}
-	.forgot{
-		gap: 0;
-	}
-	.forgot-checkbox-txt{
-		margin-right: 0;
-	}
-} */
-
 body{
 	width: 100vw;
 	height: 100vh;
@@ -122,78 +101,3 @@ main{
 	gap: 0.5rem;
 	padding: 5%;
 }
-/* header img{
-	height:350px;
-	width:300px;
-}
-
-header{
-	display:flex;
-	flex-direction:column;
-	justify-content: center;
-	align-items: center;
-	background-color: black;
-	
-}
-header h2{
-	align-self:center;
-}
-form{
-	display:flex;
-	flex-direction:column;
-	gap: 10px;
-	padding: 10px;
-}
-button{
-	background:#7F00FF;
-	border: 0px solid black;
-	border-radius:3px;
-	height:27px;
-	color:white;
-}
-button:hover{
-	background:lightgreen;	
-	border: 0px solid black;
-	border-radius:3px;
-}
-input{
-	height:30px;
-	border:1px solid #7F00FF;
-	border-radius:3px;
-	margin: 0;
-}
-.button-third{
-	background:black;
-}
-.button-third:hover{
-	background:grey;
-}
-.img-button{
-	width:20px;
-	height:20px;
-	margin-right:5px;
-}
-.forgot{
-	font-size: 12px;
-	display:flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-	gap: 5px;
-	
-}
-.forgot-checkbox-txt{
-	align-self: center;
-	margin-right: 25%;
-}
-.forgot-link{
-	align-self:center;
-}
-.img-title{
-	color: lightgreen;
-	display: flex;
-	flex-direction: nowrap;
-	gap: 5px;
-}
-.img-title-second{
-	color:#7F00FF;
-} */
