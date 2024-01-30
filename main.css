@@ -138,5 +138,11 @@ main{
 		height: 80%;
 		width: 80%;
 	}
+	.form-title{
+		font-size: 75%;
+	}
+	.form-subtitle{
+		font-size: 50%;
+	}
 	
 }
