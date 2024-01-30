@@ -25,7 +25,6 @@ header{
 	display: flex;
 	align-items: center;
 	transform: skewX(169.5deg) translateX(70px);
-
 }
 main{
 	height: 100%;
@@ -36,13 +35,12 @@ main{
 	align-items: center;
 	border: none;
 	width: 90%;
-	
 }
 .login-form{
 	background-color: #FFFBF5;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 	width: 38%;
 	height: 50%;
 	border: 1px solid grey;
@@ -130,7 +128,9 @@ main{
 
 	}
 	main{
-		margin-bottom: 1rem;
+		padding-bottom: 1rem;
+		width: 100%;
+		height: 100%;
 		
 	}
 	.login-form{
