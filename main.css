@@ -101,7 +101,7 @@ main{
 	border: none;
 	cursor: pointer;
 	font-weight: 550;
-	padding-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 .forgot{
 	align-self: center;
@@ -137,9 +137,6 @@ main{
 	.login-form{
 		height: 80%;
 		width: 80%;
-	}
-	.login-button{
-		margin-bottom: 1rem;
 	}
 	
 }
