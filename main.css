@@ -80,6 +80,7 @@ main{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	gap: 0.5rem;
 }
 .input-logo{
 	width: 1.5rem;
