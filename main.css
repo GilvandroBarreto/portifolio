@@ -101,6 +101,7 @@ main{
 	border: none;
 	cursor: pointer;
 	font-weight: 550;
+	padding-bottom:1rem;
 }
 .forgot{
 	align-self: center;
