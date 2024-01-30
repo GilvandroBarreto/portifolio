@@ -1,4 +1,4 @@
-![Thumbnail GitHub](https://user-images.githubusercontent.com/8989346/123303345-171fc980-d4f4-11eb-84ae-cb0e49bfb126.png)
+![Thumbnail GitHub](https://github.com/GilvandroBarreto/portifolio/assets/17046978/b8eb7a1a-8e45-478f-a62d-d8702c245e5b))
 
 # Login Page
 Login page designed by Gilvandro Junior.
