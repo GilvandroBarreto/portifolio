@@ -82,6 +82,10 @@ main{
 	border: none;
 	border-bottom: 1px solid black;
 }
+.input-area :active{
+	border: none;
+	border-bottom: 1px solid black;
+}
 .user-input{
 	display: flex;
 	justify-content: center;
