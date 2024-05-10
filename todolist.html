@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>TO DO List</h1>
+    </header>
+    <main class="main-container">
+      <form class="form-container">
+        <div class="form-inputs">
+          <h2>What to do today?</h2>
+          <label for="title">Title:</label>
+          <input
+            type="text"
+            id="input_title"
+            name="title"
+            minlength="2"
+            maxlength="20"
+            required
+          />
+
+          <label for="description">Description:</label>
+          <input
+            type="text"
+            id="input_description"
+            name="description"
+            minlength="2"
+            maxlength="20"
+            required
+          />
+
+          <div class="input_range">
+            <div>
+              <label for="impact" id="impact_text" style="">Impact:</label>
+              <output id="value_range"></output>
+            </div>
+            <input
+              type="range"
+              id="input_impact"
+              name="impact"
+              min="1"
+              max="4"
+              step="1"
+              required
+            />
+          </div>
+
+          <label for="date">Date:</label>
+          <input type="date" id="input_date" name="date" required />
+
+          <div class="submit-button">
+            <input type="button" id="form-container" onclick="addItem()" value="Create"></input>
+          </div>
+        </div>
+      </form>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>|</th>
+              <th>Description</th>
+              <th>|</th>
+              <th>Impact</th>
+              <th>|</th>
+              <th>Date</th>
+              <th>|</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody id="data"></tbody>
+        </table>
+      </div>
+     
+    </main>
+    <script>
+      const input1 = document.querySelector('#input_impact');
+      const value = document.querySelector('#value_range');
+      value.textContent = input1.value;
+      input1.addEventListener('input', (event) => {
+        value.textContent = event.target.value;
+      });
+
+      function addItem() {
+        var tbody = document.querySelector('#data');
+        var linha = document.createElement('tr');
+        var data1 = document.createElement('td');
+        var data2 = document.createElement('td');
+        var data3 = document.createElement('td');
+        var data4 = document.createElement('td');
+        var data5 = document.createElement('td');
+        var data6 = document.createElement('td');
+        var data7 = document.createElement('td');
+        var data8 = document.createElement('td');
+        var remover = document.createElement("input");  
+        remover.type = 'button';  
+        remover.onclick = function() {
+          var nodelist = this.parentElement;
+          nodelist.style.display = "none"; 
+         };          
+
+        data1.innerHTML = document.getElementById('input_title').value;
+        data2.innerHTML = '|';
+        data3.innerHTML = document.getElementById('input_description').value;
+        data4.innerHTML = '|';
+        data5.innerHTML = document.getElementById('input_impact').value;
+        data6.innerHTML = '|';
+        data7.innerHTML = document.getElementById('input_date').value;
+        data8.innerHTML = '|';
+        
+
+        
+  
+        linha.appendChild(data1);
+        linha.appendChild(data2);
+        linha.appendChild(data3);
+        linha.appendChild(data4);
+        linha.appendChild(data5);
+        linha.appendChild(data6);
+        linha.appendChild(data7);
+        linha.appendChild(data8);
+        linha.appendChild(remover);
+        tbody.appendChild(linha);
+        document.getElementById("input_title").value = "";
+        document.getElementById("input_description").value = "";
+        document.getElementById("input_impact").value = "";
+        document.getElementById("input_date").value = "";
+      }
+    </script>
+  </body>
+</html>
