@@ -8,13 +8,13 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header class="header-container">
       <h1>TO DO List</h1>
     </header>
     <main class="main-container">
       <form class="form-container">
         <div class="form-inputs">
-          <h2>What to do today?</h2>
+          <h2 class="form-title">What to do today?</h2>
           <label for="title">Title:</label>
           <input
             type="text"
@@ -51,15 +51,15 @@
             />
           </div>
 
-          <label for="date">Date:</label>
-          <input type="date" id="input_date" name="date" required />
+          <label for="date">Hour:</label>
+          <input type="time" id="input_date" name="date" required />
 
           <div class="submit-button">
             <input type="button" id="form-container" onclick="addItem()" value="Create"></input>
           </div>
         </div>
       </form>
-      <div>
+      <div class="dashboard">
         <table>
           <thead>
             <tr>
@@ -69,7 +69,7 @@
               <th>|</th>
               <th>Impact</th>
               <th>|</th>
-              <th>Date</th>
+              <th>Hour</th>
               <th>|</th>
               <th>Remove</th>
             </tr>
@@ -99,7 +99,9 @@
         var data7 = document.createElement('td');
         var data8 = document.createElement('td');
         var remover = document.createElement("input");  
-        remover.type = 'button';  
+        remover.type = 'button';
+        remover.style.width = '1.5rem'; 
+        remover.value = 'X';
         remover.onclick = function() {
           var nodelist = this.parentElement;
           nodelist.style.display = "none"; 
@@ -135,3 +137,4 @@
     </script>
   </body>
 </html>
+
