@@ -38,7 +38,7 @@
           <div class="input_range">
             <div>
               <label for="impact" id="impact_text" style="">Impact:</label>
-              <output id="value_range"></output>
+              <output id="value_range" style='color:#ef233c'></output>
             </div>
             <input
               type="range"
@@ -47,6 +47,7 @@
               min="1"
               max="4"
               step="1"
+              value="1"
               required
             />
           </div>
@@ -87,6 +88,27 @@
         value.textContent = event.target.value;
       });
 
+      var changeColor = document.getElementById('input_impact');
+      changeColor.addEventListener('click', (event) => {
+          x = document.getElementById('value_range');
+          switch(x.value){
+            case '1':
+              x.style.color = 'red';
+              break;
+            case '2':
+              x.style.color = '#e85d04';
+              break;
+            case'3':
+              x.style.color = '#168aad';
+              break;
+            case '4':
+              x.style.color = '#4f772d';
+              break;
+            default:
+              break;
+          };
+       });
+
       function addItem() {
         var tbody = document.querySelector('#data');
         var linha = document.createElement('tr');
@@ -112,13 +134,27 @@
         data3.innerHTML = document.getElementById('input_description').value;
         data4.innerHTML = '|';
         data5.innerHTML = document.getElementById('input_impact').value;
+        switch(data5.innerHTML){
+            case '1':
+            data5.style.color = 'red';
+              break;
+            case '2':
+            data5.style.color = 'orange';
+              break;
+            case'3':
+            data5.style.color = '#00b4d8';
+              break;
+            case '4':
+            data5.style.color = 'green';
+              break;
+            default:
+              data5.style.color = '#00b4d8';
+              break;
+          };
         data6.innerHTML = '|';
         data7.innerHTML = document.getElementById('input_date').value;
         data8.innerHTML = '|';
         
-
-        
-  
         linha.appendChild(data1);
         linha.appendChild(data2);
         linha.appendChild(data3);
@@ -131,10 +167,10 @@
         tbody.appendChild(linha);
         document.getElementById("input_title").value = "";
         document.getElementById("input_description").value = "";
-        document.getElementById("input_impact").value = "";
         document.getElementById("input_date").value = "";
       }
     </script>
   </body>
 </html>
+
 
